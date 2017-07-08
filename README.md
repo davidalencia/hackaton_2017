@@ -20,9 +20,9 @@ Se instala sails via npm
 
 ## Construido con:
 
-* [Sails](http://sailsjs.com/) - The web framework used
+* [Sails](http://sailsjs.com/) - El framework para desrrollo 
 
-## Autores:
+## Autores
 
 * **David Valencia**  - [davidalencia](https://github.com/davidalencia)
 * **Roberto Rubalcava**  - [rubal501](https://github.com/rubal501)
