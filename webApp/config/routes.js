@@ -38,6 +38,21 @@ module.exports.routes = {
   '/contacto':{
     view: 'contact'
   },
+    '/productos':{
+    view: 'products'
+    },
+  '/carrito':{
+    view: 'cart'
+  },
+  '/login':{
+    view: 'login'
+  },
+  '/signin':{
+    view: 'login'
+  },
+  '/contacto':{
+    view: 'contact'
+  },
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
