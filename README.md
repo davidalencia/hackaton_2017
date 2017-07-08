@@ -12,25 +12,20 @@ Tener NPM
 Tener instalado Sails
 
 
-### Installing
+### Instalacion
 
-<--!TODO-->
-```npm install sails```
+Se instala sails via npm
+```npm install sails -g```
 
 
-## Built With
+## Construido con:
 
-* [Sails](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Sails](http://sailsjs.com/) - The web framework used
 
-## Authors
+## Autores:
 
-* **David Valencia** - *Initial work* - [davidalencia](https://github.com/davidalencia)
-* **Roberto Rubalcava** - *Initial work* - [rubal501](https://github.com/rubal501)
-* **Roberto Rubalcava** - *Initial work* - [Victormag10](https://github.com/Victormag10)
+* **David Valencia**  - [davidalencia](https://github.com/davidalencia)
+* **Roberto Rubalcava**  - [rubal501](https://github.com/rubal501)
+* **Roberto Rubalcava** - [Victormag10](https://github.com/Victormag10)
 
-## License
-
-<--!TODO -->
-
-## Acknowledgments
 
