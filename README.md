@@ -16,7 +16,7 @@ Tener instalado Sails
 
 Se instala sails via npm
 ```npm install sails -g```
-
+el cono de su madre
 
 ## Construido con:
 
