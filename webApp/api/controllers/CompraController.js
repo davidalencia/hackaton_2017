@@ -51,8 +51,17 @@ function agregarAlCarro(req, res) {
 		});
 }
 
-
+//necesitamos datos por post
+//{id: "id"}
+function quitarDelCarrito(req, res) {
+	Compra.destroy({id: req.body.id}).exec((err, producto)=>{
+				if(err)
+						 return res.status(500).send("ERROR");
+				return res.ok();
+	});
+}
 
 module.exports = {
 	agregarAlCarro,
+	quitarDelCarrito,
 };

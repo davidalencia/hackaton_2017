@@ -42,6 +42,8 @@ module.exports.routes = {
 
     //carrito y compras
   'post /carrito/agregar':"CompraController.agregarAlCarro",
+  'post /carrito/quitar':"CompraController.quitarDelCarrito",
+  //'post /carrito/comprar':"CarritoController.comprarCarrito",
 
   '/': {
     view: 'homepage'

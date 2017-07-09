@@ -49,6 +49,10 @@ module.exports = {
       collection: "producto",
       via: "vendedor"
     },
+    Pedidos:{
+      collection: "pedido",
+      via: "Usuario_vendedor"
+    },
 
     beforeCreate:(values, cb)=>{
       return bcrypt.hash(values.contrasegna, 10, (err, hash)=>{
