@@ -8,6 +8,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares2.jpg",
   },
   {
     producto:"producto dos",
@@ -15,6 +16,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares3.jpg",
   },
   {
     producto:"producto tres",
@@ -22,6 +24,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares4.jpg",
   },
   {
     producto:"producto cuatro",
@@ -29,6 +32,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares5.jpg",
   },
   {
     producto:"producto cinco",
@@ -36,6 +40,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares5.jpg",
   },
   {
     producto:"producto seis",
@@ -43,6 +48,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen: "assets/images/collares7.jpg",
   },
   {
     producto:"producto siete",
@@ -50,6 +56,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares6.jpg",
   },
   {
     producto:"producto ocho",
@@ -57,6 +64,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares8.jpg",
   },
   {
     producto:"producto nueve",
@@ -64,6 +72,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares8.jpg",
   },
   {
     producto:"producto diez",
@@ -71,6 +80,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/ropa6.jpg",
   },
   {
     producto:"producto once",
@@ -78,6 +88,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares2.jpg",
   },
   {
     producto:"producto doce",
@@ -85,6 +96,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/ropa2.jpg",
   },
   {
     producto:"producto trece",
@@ -92,6 +104,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares5.jpg",
   },
   {
     producto:"producto catorce",
@@ -99,6 +112,7 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares9.jpg",
   },
   {
     producto:"producto quince",
@@ -106,5 +120,6 @@ module.exports=[
     stock: 22,
     costo: "200",
     moneda: "pesos",
+    direccionImagen:"assets/images/collares8.jpg",
   },
 ]

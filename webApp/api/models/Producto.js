@@ -24,6 +24,9 @@ module.exports = {
       type: "integer",
       required: true,
     },
+    direccionImagen:{
+      type: "string",
+    },
     //currency
     moneda:{
       type:"string",
