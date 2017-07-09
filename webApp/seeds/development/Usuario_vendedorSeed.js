@@ -15,11 +15,13 @@ module.exports=[
 
     Contrasegna:"contrasenia",
 
+    Ciudad:1,
+
     Codigo_postal:"2334",
 
     Calle:"Tamaulipas",
 
     Num_ext :"569",
 
-  },
+  }
 ]

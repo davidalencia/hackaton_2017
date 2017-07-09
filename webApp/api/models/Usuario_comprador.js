@@ -33,6 +33,9 @@ module.exports = {
       type: "string",
       required: true,
     },
+    Pais:{
+      model:"Pais",
+    },
     beforeCreate:(values, cb)=>{
       return bcrypt.hash(values.contrasegna, 10, (err, hash)=>{
         if(err)

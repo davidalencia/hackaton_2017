@@ -34,6 +34,7 @@ module.exports.routes = {
   'post /pais/info': 'PaisController.infoPais',
   'post /ciudad/info': 'CiudadController.infoCiudad',
   'post /vendedor/info': 'Usuario_vendedorController.infoVendor',
+  'post /comprador/info': 'Usuario_compradorController.infoComprador',
   '/': {
     view: 'homepage'
   }

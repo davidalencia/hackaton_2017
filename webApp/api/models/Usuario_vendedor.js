@@ -33,6 +33,10 @@ module.exports = {
       type: "string",
       required: true,
     },
+    Ciudad:{
+      model:"ciudad",
+      required: true,
+    },
     Codigo_postal:{
       type:"string",
       required: true,

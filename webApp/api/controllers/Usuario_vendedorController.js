@@ -5,10 +5,10 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
  function infoVendor(req,res) {
- 	Vendedor.findOne({
- 		Vendedor:req.body.vendedor
- 	}).exec((err, vendedor)=>{
- 		res.send(vendedor);
+ 	Usuario_vendedor.findOne({
+ 		Usuario_vendedor:req.body.usuario_vendedor
+ 	}).exec((err, usuario_vendedor)=>{
+ 		res.send(usuario_vendedor);
  	})
  }
 module.exports = {
