@@ -3,29 +3,23 @@
 
 module.exports=[
   {
-    Usuario_vendedor:{
-      type:"string",
-      required:true,
-      unique: true,
-    },
-    Nombre:{
-      type: "string",
-      required: true,
-    },
-    Apellido:{
-      type: "string",
-      required: true//no estoy seguro
-    },
-    Telefono:"",
+    Usuario_vendedor:"John117",//microsoft por favor no nos demandes
 
-    Correo:"",
+    Nombre:"John",
 
-    Contrasegna:"",
+    Apellido:"Fakename",
 
-    Codigo_postal:"",
-    Calle:"",
-    Num_ext :
-    },
-    Productos:,
-  }
+    Telefono:"56587414",
+
+    Correo:"johnFakename@gmail.com",
+
+    Contrasegna:"contrasenia",
+
+    Codigo_postal:"2334",
+
+    Calle:"Tamaulipas",
+
+    Num_ext :"569",
+
+  },
 ]

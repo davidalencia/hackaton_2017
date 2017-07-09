@@ -33,6 +33,7 @@ module.exports.routes = {
   ***************************************************************************/
   'post /pais/info': 'PaisController.infoPais',
   'post /ciudad/info': 'CiudadController.infoCiudad',
+  'post /vendedor/info': 'Usuario_vendedorController.infoVendor',
   '/': {
     view: 'homepage'
   }

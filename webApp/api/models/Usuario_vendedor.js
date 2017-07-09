@@ -19,7 +19,7 @@ module.exports = {
     },
     Apellido:{
       type: "string",
-      required: true//no estoy seguro
+      required: true//yo si estoy seguro
     },
     Telefono:{
       type:"string",

@@ -4,9 +4,9 @@
  * @description :: Server-side logic for managing Usuario_vendedors
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
- function infoPais(req,res) {
+ function infoVendor(req,res) {
  	Vendedor.findOne({
- 		Pais:req.body.vendedor
+ 		Vendedor:req.body.vendedor
  	}).exec((err, vendedor)=>{
  		res.send(vendedor);
  	})
