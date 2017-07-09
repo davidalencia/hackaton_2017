@@ -32,6 +32,17 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  //controladores
+
+    //producto
+  'post /producto/info':'ProductoController.infoProducto',
+  'post /producto/nuevo':"ProductoController.productoNuevo",
+  'post /producto/borrar':"ProductoController.eliminaProducto",
+  'post /producto/jalar':"ProductoController.jalaProductos",
+
+    //carrito y compras
+  'post /carrito/agregar':"CompraController.agregarAlCarro",
+
   '/': {
     view: 'homepage'
   }
