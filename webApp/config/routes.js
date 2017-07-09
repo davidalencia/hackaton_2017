@@ -57,6 +57,7 @@ module.exports.routes = {
   'post /sigin/client': 'Signin_Usuario_compradorController.createAcount',
 
   '/': {
+<<<<<<< HEAD
     view: 'homepage'
   },
   '/noticias':{
@@ -78,6 +79,28 @@ module.exports.routes = {
     view: 'vendedor',
   },
 
+=======
+    view: 'home'
+  },
+  '/contacto':{
+    view: 'contact'
+  },
+    '/productos':{
+    view: 'products'
+    },
+  '/carrito':{
+    view: 'cart'
+  },
+  '/login':{
+    view: 'login'
+  },
+  '/signin':{
+    view: 'login'
+  },
+  '/contacto':{
+    view: 'contact'
+  },
+>>>>>>> d177e8b4c2c9f47677640084df20ba7b2b43d7f8
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
