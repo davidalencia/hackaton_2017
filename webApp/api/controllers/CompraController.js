@@ -7,7 +7,7 @@
 //necesitamos los datos por post
 //{producto:"id", catidad:"int", vendedor:"id", comprador:"id", ciudad:"id", codigo:"codigo", calle:"calle", num:"num"}
 function agregarAlCarro(req, res) {
-	console.log("entro")
+	var updated=false;
 	Producto.findOne({id:req.body.producto}).exec((err, enStock)=>{
 		if(err)
 				 return res.status(500).send("ERROR");
@@ -15,7 +15,6 @@ function agregarAlCarro(req, res) {
 				return res.status(500).send("ya no hay en stock o el vendedor dejo de venderlo");
 		else if(parseInt(enStock.stock)< parseInt(req.body.cantidad))
 				return res.send("no hay suficiente stock para tu pedido");
-			console.log("paso los basicos de enStock")
 		Carrito.findOrCreate({Usuario_comprador:req.body.comprador,/*req.session.id*/Ciudad:req.body.ciudad, Codigo_postal:req.body.codigo, Calle:req.body.calle, Num_ext:req.body.num})
 			.exec((err, carrito)=>{
 				if(err)
@@ -45,28 +44,14 @@ function agregarAlCarro(req, res) {
 								}).exec((err, producto)=>{
 							    		if(err)
 											     return res.status(500).send("ERROR");
+											return res.ok();
 							  });
-
-								console.log("paso la instanciación de compra")
-							var stockRestante=enStock.stock-req.body.cantidad
-							if(stockRestante==0)
-								Producto.destroy({id:req.body.producto}).exec((err, producto)=>{
-									if(err)
-											 return res.status(500).send("ERROR");
-									return res.ok();
-								});
-							else
-								Producto.update({id:req.body.producto},
-									{stock: stockRestante}).exec((err, producto)=>{
-										console.log("update producto", stockRestante, producto);
-										if(err)
-												 return res.status(500).send("ERROR");
-										return res.ok();
-									});
 					});
 			});
 		});
 }
+
+
 
 module.exports = {
 	agregarAlCarro,
