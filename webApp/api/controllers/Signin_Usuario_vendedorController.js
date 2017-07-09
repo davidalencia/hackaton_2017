@@ -4,36 +4,36 @@
  * @description :: Server-side logic for managing Signin_usuario_vendedors
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
+function createAcount(req, res) {
+  Usuario_vendedor.findOne({
+    Usuario_vendedor: req.body.usuario_vendedor
+  }).exec((err, usuario_vendedor) => {
+    if (typeof usuario_vendedor !== "undefined") {
+      res.redirect("#")
+      res.send("Ya tiene usuario en el sitio");
+    } else {
+      Usuario_vendedor.create({
+        Usuario_vendedor:req.body.usuario_vendedor,
+        Nombre:req.body.nombre,
+        Apellido:req.body.apellido,
+        Telefono:req.body.telefono,
+        Correo:req.body.correo,
+        Contrasegna:req.body.contrasegna,
+        Ciudad:req.body.ciudad,
+        Codigo_postal:req.body.codigo_postal,
+        Calle:req.body.calle,
+        Num_ext :req.body.num_ext,
+      }).exec(function(err, usuario_vendedor) {
+        if (err) {
+          return res.serverError(err);
+        }
 
- function createAcount(req, res) {
-   usuario_vendedor.findOne({
-     usuario_vendedor: req.body.usuario_vendedor
-   }).exec((err, usuario_vendedor) => {
-     if (typeof usuario_vendedor !== "undefined") {
-       res.redirect("#")
-       res.send("Ya tiene usuario en el sitio");
-     } else {
-       Usuario.create(req.body.usuario_vendedor).exec(function(err,usuario_vendedor) {
-         if (err) {
-           return res.serverError(err);
-           sails.log('Nuevo usuario Vendedor: ' + req.body.usuario_vendedor);
-         }
-
-
-         Usuario.create(req.body.contrasegna).exec(function(err, contrsegna) {
-           if (err) {
-             return res.serverError(err);
-           }
-
-           sails.log('contrasegna nueva :' + req.body.contrasegna);
-           return res.ok();
-         });
-
-
-       });
-     }
-   })
- }
- module.exports = {
-   createAcount
- };
+        sails.log('Nuevo usuario registrado', req.body.usuario_vendedor);
+        return res.ok();
+      });
+    }
+  })
+}
+module.exports = {
+  createAcount
+};
