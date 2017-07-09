@@ -59,8 +59,23 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-  '/products':{
-    view: 'ListView',
+  '/noticias':{
+    view: 'blog',
+  },
+  '/carrito':{
+    view: 'cart',
+  },
+  '/productos':{
+    view: 'products',
+  },
+  '/inicio':{
+    view: 'signin',
+  },
+  '/articulo':{
+    view: 'single',
+  },
+  '/panelvendedor':{
+    view: 'vendedor',
   },
 
   /***************************************************************************
