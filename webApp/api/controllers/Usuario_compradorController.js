@@ -9,6 +9,7 @@
   Comprador.findOne({
     Comprador:req.body.comprador
   }).exec((err, comprador)=>{
+    console.log(comprador);
     res.send(comprador);
   })
  }

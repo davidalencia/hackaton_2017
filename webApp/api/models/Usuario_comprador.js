@@ -5,6 +5,8 @@
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
+ const bcrypt = require('bcrypt');
+
 module.exports = {
 
   attributes: {
@@ -36,13 +38,14 @@ module.exports = {
     Pais:{
       model:"Pais",
     },
-    beforeCreate:(values, cb)=>{
-      return bcrypt.hash(values.contrasegna, 10, (err, hash)=>{
-        if(err)
-          return cb(err);
-        values.contrasegna=hash;
-        return cb(null, values);
-      });
-    },
-  }
+  },
+  beforeCreate:(values, cb)=>{
+    return bcrypt.hash(values.Contrasegna, 10, (err, hash)=>{
+      if(err)
+        return cb(err);
+        console.log(hash);
+      values.Contrasegna=hash;
+      return cb(null, values);
+    });
+  },
 };

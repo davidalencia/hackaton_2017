@@ -8,7 +8,8 @@
  	Ciudad.findOne({
  		Ciudad:req.body.ciudad
  	}).exec((err, ciudad)=>{
- 		res.send(ciudad);
+    console.log(ciudad);
+    res.send(ciudad);
  	})
  }
 

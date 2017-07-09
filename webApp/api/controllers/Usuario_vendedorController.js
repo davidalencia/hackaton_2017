@@ -8,7 +8,8 @@
  	Usuario_vendedor.findOne({
  		Usuario_vendedor:req.body.usuario_vendedor
  	}).exec((err, usuario_vendedor)=>{
- 		res.send(usuario_vendedor);
+    console.log(usuario_vendedor);
+    res.send(usuario_vendedor);
  	})
  }
 module.exports = {

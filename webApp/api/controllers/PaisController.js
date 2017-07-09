@@ -10,7 +10,9 @@ function infoPais(req,res) {
 	Pais.findOne({
 		Pais:req.body.pais
 	}).populate("Estados").exec((err, pais)=>{
+		console.log(pais);
 		res.send(pais);
+
 	})
 }
 module.exports = {

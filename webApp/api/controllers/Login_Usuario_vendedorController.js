@@ -26,6 +26,7 @@
                   res.redirect("/"); //falta la ruta de la parte del login
                 }
             });
+
           }
  				 else {
  				 	req.session.name = req.body.usr;

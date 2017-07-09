@@ -13,7 +13,7 @@ module.exports=[
 
     Correo:"johnFakename@gmail.com",
 
-    Contrasegna:"contrasenia",
+    Contrasegna:"1234",
 
     Ciudad:1,
 
