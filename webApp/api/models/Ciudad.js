@@ -15,5 +15,9 @@ module.exports = {
     Estado:{
       model:"Estado",
     },
+    descripcion:{
+      type:"string",
+      required:"true"
+    },
   }
 };

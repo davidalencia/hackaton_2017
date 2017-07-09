@@ -31,7 +31,8 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-
+  'post /pais/info': 'PaisController.infoPais',
+  'post /ciudad/info': 'CiudadController.infoCiudad',
   '/': {
     view: 'homepage'
   }
