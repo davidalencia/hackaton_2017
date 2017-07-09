@@ -5,6 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body{
+<<<<<<< HEAD
     margin:0;
     color:#6a6f8c;
     background:#c8c8c8;
@@ -156,6 +157,8 @@ a{color:inherit;text-decoration:none}
 }
 
 body{
+=======
+>>>>>>> d177e8b4c2c9f47677640084df20ba7b2b43d7f8
 	padding:0;
 	margin:0;
 	font-family: 'Lato', sans-serif;
@@ -1072,7 +1075,10 @@ i.pinterest:hover {
 	top: 261px;
 	left: 393px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d177e8b4c2c9f47677640084df20ba7b2b43d7f8
 .contact-form-main input[type="submit"] {
 	border: none;
 	background: url('../images/submit.png') no-repeat 45px 8px #eb5367;
