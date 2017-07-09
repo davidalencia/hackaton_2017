@@ -1,4 +1,4 @@
-/**
+  /**
  * Producto.js
  *
  * @description :: TODO: You might write a short summary of how this model works and what it represents here.
@@ -12,12 +12,21 @@ module.exports = {
       type:"text",
       required:true,
     },
+    descripcion:{
+      type: "string",
+      required:true,
+    },
     stock:{
       type:"integer",
       required: true,
     },
     costo:{
       type: "integer",
+      required: true,
+    },
+    //currency
+    moneda:{
+      type:"string",
       required: true,
     },
     categoria:{
@@ -29,6 +38,6 @@ module.exports = {
     ciudad:{
       model:"ciudad",
     },
-    
+
   }
 };
