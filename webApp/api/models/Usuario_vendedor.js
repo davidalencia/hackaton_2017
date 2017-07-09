@@ -5,6 +5,7 @@
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
+ const bcrypt = require('bcrypt');
 module.exports = {
 
   attributes: {
@@ -19,7 +20,7 @@ module.exports = {
     },
     Apellido:{
       type: "string",
-      required: true//no estoy seguro
+      required: true//yo si estoy seguro
     },
     Telefono:{
       type:"string",
@@ -31,6 +32,10 @@ module.exports = {
     },
     Contrasegna:{
       type: "string",
+      required: true,
+    },
+    Ciudad:{
+      model:"ciudad",
       required: true,
     },
     Codigo_postal:{
@@ -49,18 +54,21 @@ module.exports = {
       collection: "producto",
       via: "vendedor"
     },
+
     Pedidos:{
       collection: "pedido",
       via: "Usuario_vendedor"
     },
 
-    beforeCreate:(values, cb)=>{
-      return bcrypt.hash(values.contrasegna, 10, (err, hash)=>{
-        if(err)
-          return cb(err);
-        values.contrasegna=hash;
-        return cb(null, values);
-      });
-    },
-  }
+  },
+  beforeCreate:(values, cb)=>{
+    return bcrypt.hash(values.Contrasegna, 10, (err, hash)=>{
+      if(err)
+        return cb(err);
+        console.log(hash);
+      values.Contrasegna=hash;
+      return cb(null, values);
+    });
+  },
+
 };

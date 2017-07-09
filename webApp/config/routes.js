@@ -32,6 +32,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+
   //controladores
 
     //producto
@@ -44,6 +45,16 @@ module.exports.routes = {
   'post /carrito/agregar':"CompraController.agregarAlCarro",
   'post /carrito/quitar':"CompraController.quitarDelCarrito",
   //'post /carrito/comprar':"CarritoController.comprarCarrito",
+
+
+  'post /pais/info': 'PaisController.infoPais',
+  'post /ciudad/info': 'CiudadController.infoCiudad',
+  'post /vendedor/info': 'Usuario_vendedorController.infoVendor',
+  'post /comprador/info': 'Usuario_compradorController.infoComprador',
+  'post /login/client': 'Login_Usuario_compradorController.login',
+  'post /login/partner': 'Login_Usuario_vendedorController.login',
+  'post /sigin/partner': 'Signin_Usuario_vendedorController.createAcount',
+  'post /sigin/client': 'Signin_Usuario_compradorController.createAcount',
 
   '/': {
     view: 'homepage'
