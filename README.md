@@ -3,15 +3,19 @@
 Aplicacion web de e-comerce que permite vender productos de diversos origenes con el objetivo de concientizar a la gente.
 ### Prerequisitos
 
-*Tener NPM.
-*Tener instalado Sails.
-*Tener mysql.
-### Instalacion
+#Tener NPM.
+#Tener instalado Sails.
+#Tener mysql.
 
-Se instala sails via npm
+### Despliegue de manera local
+
+#Se clona el repositrio con ```git clone git@github.com:davidalencia/hackaton_2017.git``` o se descarga como zip
+
+#Se instala sails via npm en la locaclizacion donde se descargo el proyecto
 ```npm install sails```.
-Se inicia mysql
+#Se inicia mysql(se debe de mantener iniciado mientras corre el servidor)
 ```mysql -u root -p```.
+#Se inicia el servidor de sails en la carpeta donde se encuentra la web App. ```sails lift```.
 
 
 ## Construido con:
