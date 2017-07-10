@@ -1,4 +1,4 @@
-# Hackathon 2017
+![Logo triana](https://raw.githubusercontent.com/davidalencia/hackaton_2017/master/webApp/assets/images/logos.png)
 
 Aplicacion web de e-comerce que permite vender productos de diversos origenes con el objetivo de concientizar a la gente.
 
