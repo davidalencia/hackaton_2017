@@ -4,8 +4,11 @@ Aplicacion web de e-comerce que permite vender productos de diversos origenes co
 ### Prerequisitos
 
 #Tener NPM.
+
 #Tener instalado Sails.
+
 #Tener mysql.
+
 
 ### Despliegue de manera local
 
